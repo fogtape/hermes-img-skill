@@ -1,0 +1,31 @@
+version: 1
+
+profiles:
+  none:
+    description: Fully compatible with the current behavior; no strategy defaults applied.
+
+  official-like:
+    description: Stabler composition and polished output without changing model/backend defaults.
+    quality: high
+    prompt_suffix: clean composition, polished final-image quality, clear focal subject, coherent lighting, well-balanced framing
+
+  fast:
+    description: Faster, lighter default behavior with minimal augmentation.
+    prompt_suffix: clear subject, simple composition
+
+  anime-poster:
+    description: Poster-oriented anime / 国漫 style defaults.
+    quality: high
+    size: 1024x1536
+    prompt_suffix: anime poster style, dynamic composition, strong focal subject, cinematic lighting, detailed costume design, clean character faces, no text, no watermark, no extra limbs
+
+  photo-real:
+    description: Photorealistic style defaults with realistic lighting and anatomy.
+    quality: high
+    prompt_suffix: photorealistic, realistic lighting, natural materials, natural proportions, clean facial details, natural hands, no text, no watermark
+
+  social-cover:
+    description: Social cover / 小红书封面 / 营销首图 defaults with legible composition and whitespace.
+    quality: high
+    size: 1024x1536
+    prompt_suffix: social cover composition, strong focal subject, clean layout, leave usable whitespace for title overlay, high visual contrast, no text, no watermark

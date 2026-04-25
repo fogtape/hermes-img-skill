@@ -1,0 +1,6 @@
+version: 1
+
+prompts:
+  localized_fix_suffix: only change the targeted local region, preserve layout, colors, borders, icons, typography alignment, and all unrelated regions
+  preserve_unrelated_suffix: preserve unrelated regions when editing
+  variant_suffix: create an alternate variation with similar style and overall intent, but different framing or secondary details
